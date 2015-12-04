@@ -1,0 +1,14 @@
+PODS:
+  - TCBlobDownloadObjC (0.1.0)
+
+DEPENDENCIES:
+  - TCBlobDownloadObjC (from `../`)
+
+EXTERNAL SOURCES:
+  TCBlobDownloadObjC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TCBlobDownloadObjC: b3bce076502c1f160d9268af27b9aa46caeae727
+
+COCOAPODS: 0.39.0

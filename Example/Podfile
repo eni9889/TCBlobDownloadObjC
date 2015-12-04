@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
+#use_frameworks!
 
 target 'TCBlobDownloadObjC_Example', :exclusive => true do
   pod "TCBlobDownloadObjC", :path => "../"
@@ -7,6 +7,4 @@ end
 
 target 'TCBlobDownloadObjC_Tests', :exclusive => true do
   pod "TCBlobDownloadObjC", :path => "../"
-
-  
 end

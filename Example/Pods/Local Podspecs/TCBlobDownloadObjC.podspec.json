@@ -1,0 +1,25 @@
+{
+  "name": "TCBlobDownloadObjC",
+  "version": "0.1.0",
+  "summary": "A short description of TCBlobDownloadObjC.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/TCBlobDownloadObjC",
+  "license": "MIT",
+  "authors": {
+    "UnlimApps Inc": "enea@unlimapps.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/TCBlobDownloadObjC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "TCBlobDownloadObjC": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
