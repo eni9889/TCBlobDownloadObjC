@@ -9,18 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "TCBlobDownload.h"
 
-const NSString *kTCBlobDownloadSessionIdentifier = @"tcblobdownloadmanager_downloads";
-const NSString *kTCBlobDownloadErrorDomain = @"com.tcblobdownloadswift.error";
-const NSString *kTCBlobDownloadErrorDescriptionKey = @"TCBlobDownloadErrorDescriptionKey";
-const NSString *kTCBlobDownloadErrorHTTPStatusKey = @"TCBlobDownloadErrorHTTPStatusKey";
-const NSString *kTCBlobDownloadErrorFailingURLKey = @"TCBlobDownloadFailingURLKey";
+static NSString *kTCBlobDownloadSessionIdentifier = @"tcblobdownloadmanager_downloads";
+static NSString *kTCBlobDownloadErrorDomain = @"com.tcblobdownloadswift.error";
+static NSString *kTCBlobDownloadErrorDescriptionKey = @"TCBlobDownloadErrorDescriptionKey";
+static NSString *kTCBlobDownloadErrorHTTPStatusKey = @"TCBlobDownloadErrorHTTPStatusKey";
+static NSString *kTCBlobDownloadErrorFailingURLKey = @"TCBlobDownloadFailingURLKey";
 
 typedef enum {
     TCBlobDownloadHTTPError = 1
 } TCBlobDownloadError;
 
 @interface DownloadDelegate : NSObject <NSURLSessionDownloadDelegate>
-@property (nonatomic, strong) NSMutableArray *downloads;
+@property (nonatomic, strong) NSMutableDictionary *downloads;
 @end
 
 @interface TCBlobDownloadManager : NSObject
@@ -72,4 +72,13 @@ typedef enum {
  :return: A `TCBlobDownload` instance.
  */
 -(TCBlobDownload *)downloadFileWithResumeData:(NSData *)resumeData toDirectory:(NSURL *)directory withName:(NSString *)name andDelegate:(id <TCBlobDownloadDelegate>)delegate;
+
+/**
+ Gets the downloads in a given state currently being processed by the instance of `TCBlobDownloadManager`.
+ 
+ :param: state The state by which to filter the current downloads.
+ 
+ :return: An `Array` of all current downloads with the given state.
+ */
+-(NSMutableArray *)currentDownloadsFilteredByState:(NSURLSessionTaskState)state;
 @end
