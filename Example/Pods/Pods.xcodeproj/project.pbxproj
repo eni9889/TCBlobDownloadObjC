@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		061F722F3EAF94C18A85B68131C74A59 /* TCBlobDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EEEDB3F8748C50AD3F8E5BC0F32A8305 /* TCBlobDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		061F722F3EAF94C18A85B68131C74A59 /* TCBlobDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F4245C469808F1113B6DFDEC04124F18 /* TCBlobDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EAC3ADF81558DE6FB1791E4F43D0477 /* Pods-TCBlobDownloadObjC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E25501D220E6C567BE1675286D1E760 /* Pods-TCBlobDownloadObjC_Example-dummy.m */; };
 		39DC3B7E5EDC513DE3307DE556CDA57A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		4285736C98EE8C59A2875FC556A4683D /* TCBlobDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDD30F5A1EE7DBC148B70133B0B4E9 /* TCBlobDownloadManager.m */; };
+		3EC72D0CF1229E8E5FECAC01302389FA /* TCBlobDownloadObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E59F2094843C23DF0E24C1EE82E0EBE /* TCBlobDownloadObjC-dummy.m */; };
 		603F17608ADA3BA093FA979BCD6BEC2B /* Pods-TCBlobDownloadObjC_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE2D8745CD869FFDB2D981B8CCB1C5C /* Pods-TCBlobDownloadObjC_Tests-dummy.m */; };
-		AA1CA4F1943D7CB5A18923511063B7DE /* TCBlobDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F9A33B156EFE2CEE0E7235CF37B4A7 /* TCBlobDownload.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B09BFAFCC09FB8C111093A9CF73E4B53 /* TCBlobDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = A83586DDBEB712945B32419F3900A5F2 /* TCBlobDownload.m */; };
+		8A62EAD6ED8D53ECCB80FD24A73F025B /* TCBlobDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1205123531F73C762CA1D8D75C723B /* TCBlobDownload.m */; };
+		AA1CA4F1943D7CB5A18923511063B7DE /* TCBlobDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 8264FB2CA1B5C66725D00226C0AD7617 /* TCBlobDownload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA11B46277C317BDB063410299D22D9 /* TCBlobDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644CD6B8F8734F619D4FB4E3610DBB0 /* TCBlobDownloadManager.m */; };
 		C9DA36DD402D4221CA45B8F1247B798A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		CAEDB0651BB45D4C77F9485215ED8C6B /* TCBlobDownloadObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E59F2094843C23DF0E24C1EE82E0EBE /* TCBlobDownloadObjC-dummy.m */; };
 		E7FDA904931374FD0C08D05975E14D3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,17 +51,17 @@
 		30787FAE3B95B323CCB015F53F0B4108 /* Pods-TCBlobDownloadObjC_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBlobDownloadObjC_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3D707379F5B3A65642C65C209CBE83C5 /* TCBlobDownloadObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCBlobDownloadObjC-prefix.pch"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C1205123531F73C762CA1D8D75C723B /* TCBlobDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownload.m; sourceTree = "<group>"; };
 		5119C399DAFFF53F6DCBD5D23347995B /* Pods-TCBlobDownloadObjC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5638848D64453B058399152E677D4842 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBlobDownloadObjC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6F632FEABCE64CB14CA6D0FC787FB553 /* Pods-TCBlobDownloadObjC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7644CD6B8F8734F619D4FB4E3610DBB0 /* TCBlobDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownloadManager.m; sourceTree = "<group>"; };
 		7E004D6EE880A0CF05135BBB2A63AFD3 /* Pods-TCBlobDownloadObjC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8264FB2CA1B5C66725D00226C0AD7617 /* TCBlobDownload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBlobDownload.h; sourceTree = "<group>"; };
 		8CAA3B671D9004D6335A2131649CF54E /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBlobDownloadObjC_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9687F1A186A98CB0377300F2C869E363 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBlobDownloadObjC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9E59F2094843C23DF0E24C1EE82E0EBE /* TCBlobDownloadObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCBlobDownloadObjC-dummy.m"; sourceTree = "<group>"; };
 		A17FAE2DB2C76EAEED19A750179F553C /* Pods-TCBlobDownloadObjC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A2CDD30F5A1EE7DBC148B70133B0B4E9 /* TCBlobDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownloadManager.m; sourceTree = "<group>"; };
-		A7F9A33B156EFE2CEE0E7235CF37B4A7 /* TCBlobDownload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBlobDownload.h; sourceTree = "<group>"; };
-		A83586DDBEB712945B32419F3900A5F2 /* TCBlobDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownload.m; sourceTree = "<group>"; };
 		B79651C59044DB439D35A1929890DD1E /* libTCBlobDownloadObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTCBlobDownloadObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7ADAECF929B60F8A172329ABE848525 /* Pods-TCBlobDownloadObjC_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBlobDownloadObjC_Tests-resources.sh"; sourceTree = "<group>"; };
 		B9C728B6049C940CC40BF09E6A5573B5 /* TCBlobDownloadObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCBlobDownloadObjC.xcconfig; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		C0574ACA4DC99B65EF07FAB641D9738C /* Pods-TCBlobDownloadObjC_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBlobDownloadObjC_Example-resources.sh"; sourceTree = "<group>"; };
 		C181E957D7A6BC0CB7AB68FD4D68C8BB /* libPods-TCBlobDownloadObjC_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCBlobDownloadObjC_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6EDAE6E9AAD8D2E3ED00E03EEF6C9D /* libPods-TCBlobDownloadObjC_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCBlobDownloadObjC_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEEDB3F8748C50AD3F8E5BC0F32A8305 /* TCBlobDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBlobDownloadManager.h; sourceTree = "<group>"; };
+		F4245C469808F1113B6DFDEC04124F18 /* TCBlobDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBlobDownloadManager.h; sourceTree = "<group>"; };
 		F817AFB49C8F370A4B78F7554543D54A /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBlobDownloadObjC_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,22 +120,11 @@
 		064434A7362A7ECC21E24B1BBC3E3BDA /* TCBlobDownloadObjC */ = {
 			isa = PBXGroup;
 			children = (
-				720B9CA4701965988417332D0972C328 /* Pod */,
+				AB44E8106BF2D71167D29E7BFFEC52B1 /* Pod */,
 				28DE02CC7FCA4B8D62909FC444A58ECE /* Support Files */,
 			);
 			name = TCBlobDownloadObjC;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		1E95A4F983E451B7E6D38DE4D85D2BED /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A7F9A33B156EFE2CEE0E7235CF37B4A7 /* TCBlobDownload.h */,
-				A83586DDBEB712945B32419F3900A5F2 /* TCBlobDownload.m */,
-				EEEDB3F8748C50AD3F8E5BC0F32A8305 /* TCBlobDownloadManager.h */,
-				A2CDD30F5A1EE7DBC148B70133B0B4E9 /* TCBlobDownloadManager.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		28DE02CC7FCA4B8D62909FC444A58ECE /* Support Files */ = {
@@ -179,20 +168,23 @@
 			path = "Target Support Files/Pods-TCBlobDownloadObjC_Example";
 			sourceTree = "<group>";
 		};
+		4C15D47F4DBE5FA14BD363B7A82AB012 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8264FB2CA1B5C66725D00226C0AD7617 /* TCBlobDownload.h */,
+				4C1205123531F73C762CA1D8D75C723B /* TCBlobDownload.m */,
+				F4245C469808F1113B6DFDEC04124F18 /* TCBlobDownloadManager.h */,
+				7644CD6B8F8734F619D4FB4E3610DBB0 /* TCBlobDownloadManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		52C28A45233C038963B44F9198543721 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				064434A7362A7ECC21E24B1BBC3E3BDA /* TCBlobDownloadObjC */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		720B9CA4701965988417332D0972C328 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				1E95A4F983E451B7E6D38DE4D85D2BED /* Classes */,
-			);
-			path = Pod;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -215,6 +207,14 @@
 				2CE2030ED1463E600BE8FC54DEA47017 /* TCBlobDownloadObjC.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AB44E8106BF2D71167D29E7BFFEC52B1 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4C15D47F4DBE5FA14BD363B7A82AB012 /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -286,7 +286,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D3897812D4208B1889D17495342D547 /* Build configuration list for PBXNativeTarget "TCBlobDownloadObjC" */;
 			buildPhases = (
-				9F2BFD2B1EC7834E6477F85DD01989F1 /* Sources */,
+				B045A6981369CF700718CB1B5C6782FB /* Sources */,
 				7974987068D162A3E4D8777DC48A7DC4 /* Frameworks */,
 				E1F72F04B1475023723D6A77C5257629 /* Headers */,
 			);
@@ -365,20 +365,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F2BFD2B1EC7834E6477F85DD01989F1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B09BFAFCC09FB8C111093A9CF73E4B53 /* TCBlobDownload.m in Sources */,
-				4285736C98EE8C59A2875FC556A4683D /* TCBlobDownloadManager.m in Sources */,
-				CAEDB0651BB45D4C77F9485215ED8C6B /* TCBlobDownloadObjC-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AD75DA116A8324B9990438226F130384 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B045A6981369CF700718CB1B5C6782FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A62EAD6ED8D53ECCB80FD24A73F025B /* TCBlobDownload.m in Sources */,
+				BFA11B46277C317BDB063410299D22D9 /* TCBlobDownloadManager.m in Sources */,
+				3EC72D0CF1229E8E5FECAC01302389FA /* TCBlobDownloadObjC-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,7 @@
 
 -(instancetype)initWithConfig:(NSURLSessionConfiguration *)config {
     if (self = [super init]) {
+        self.startImmediatly = YES;
         self.delegate = [[DownloadDelegate alloc] init];
         self.session = [NSURLSession sessionWithConfiguration:config delegate:self.delegate delegateQueue:nil];
         self.session.sessionDescription = @"TCBlobDownloadManger session";
@@ -67,15 +68,28 @@
 @end
 
 @implementation DownloadDelegate
+
+-(instancetype)init {
+    if (self = [super init]) {
+        self.downloads = [[NSMutableDictionary alloc] init];
+    }
+    return self;
+}
+
 -(BOOL)validateResponse:(NSHTTPURLResponse *)response {
     return response.statusCode >= 200 && response.statusCode <= 299;
 }
 
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location; {
     TCBlobDownload *download = self.downloads[@(downloadTask.taskIdentifier)];
+    NSLog(@"download: %@", download);
+    
     NSError *fileError;
     NSURL *resultingURL;
-    if ([[NSFileManager defaultManager] replaceItemAtURL:download.destinationURL withItemAtURL:location backupItemName:nil options:NSFileManagerItemReplacementUsingNewMetadataOnly resultingItemURL:&resultingURL error:&fileError]) {
+    
+    
+    BOOL result = [[NSFileManager defaultManager] replaceItemAtURL:download.destinationURL withItemAtURL:location backupItemName:nil options:NSFileManagerItemReplacementUsingNewMetadataOnly resultingItemURL:&resultingURL error:&fileError];
+    if (result) {
         download.resultingURL = resultingURL;
     } else {
         download.error = fileError;
