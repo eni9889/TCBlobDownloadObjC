@@ -10,6 +10,7 @@
 #import "TCBlobDownload.h"
 
 static NSString *kTCBlobDownloadSessionIdentifier = @"tcblobdownloadmanager_downloads";
+static NSString *kTCBlobDownloadBackgroundSessionIdentifier = @"tcblobdownloadmanager_downloads_background";
 static NSString *kTCBlobDownloadErrorDomain = @"com.tcblobdownloadswift.error";
 static NSString *kTCBlobDownloadErrorDescriptionKey = @"TCBlobDownloadErrorDescriptionKey";
 static NSString *kTCBlobDownloadErrorHTTPStatusKey = @"TCBlobDownloadErrorHTTPStatusKey";
@@ -19,6 +20,11 @@ typedef enum {
     TCBlobDownloadHTTPError = 1
 } TCBlobDownloadError;
 
+typedef enum {
+    kDownloadManagerStateForeground,
+    kDownloadManagerStateBackground
+} DownloadManagerState;
+
 @interface DownloadDelegate : NSObject <NSURLSessionDownloadDelegate>
 @property (nonatomic, strong) NSMutableDictionary *downloads;
 @end
@@ -26,8 +32,11 @@ typedef enum {
 @interface TCBlobDownloadManager : NSObject
 
 @property (nonatomic, strong) DownloadDelegate *delegate;
-@property (nonatomic, strong) NSURLSession *session;
+@property (nonatomic, strong) NSURLSession *foregroundSession;
+@property (nonatomic, strong) NSURLSession *backgroundSession;
+@property (nonatomic, weak) NSURLSession *activeSession;
 
+@property (nonatomic, assign) DownloadManagerState state;
 @property (nonatomic, assign) BOOL startImmediatly;
 
 /**
