@@ -22,7 +22,7 @@
  :param: totalBytesWritten The total number of bytes the download has currently written to the disk.
  :param: totalBytesExpectedToWrite The total number of bytes the download will write to the disk once completed.
  */
--(void)download:(TCBlobDownload *)download didProgress:(double)progress totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
+-(void)download:(TCBlobDownload *)download didProgress:(double)progress withSpeed:(double)speedRate remainingTime:(double)remainingTime totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
 
 /**
  Informs the delegate that the download was completed (similar to `NSURLSession -URLSession:task:didCompleteWithError:`).
@@ -36,7 +36,7 @@
 -(void)download:(TCBlobDownload *)download didFinishWithError:(NSError *)error atLocation:(NSURL *)location;
 @end
 
-typedef void (^TCBlobDownloadProgressHandler)(double progress, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite);
+typedef void (^TCBlobDownloadProgressHandler)(double progress, double speedRate, double remainingTime, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite);
 typedef void (^TCBlobDownloadCompletionHandler)(NSError *error, NSURL *location);
 
 @interface TCBlobDownload : NSObject
@@ -54,6 +54,8 @@ typedef void (^TCBlobDownloadCompletionHandler)(NSError *error, NSURL *location)
 @property (nonatomic, strong) NSError *error;
 
 @property (nonatomic, assign) double progress;
+@property (nonatomic, assign) double speedRate;
+@property (nonatomic, assign) double remainingTime;
 
 @property (nonatomic, copy) NSString *fileName;
 @property (nonatomic, strong) NSURL *destinationURL;
@@ -99,4 +101,6 @@ typedef void (^TCBlobDownloadCompletionHandler)(NSError *error, NSURL *location)
  :param: completionHandler A completion handler that is called when the download has been successfully canceled. If the download is resumable, the completion handler is provided with a resumeData object.
  */
 -(void)cancelWithResumeData:(void (^)(NSData *data))completion;
+
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
 @end

@@ -40,12 +40,6 @@ typedef enum {
 @property (nonatomic, assign) BOOL startImmediatly;
 
 /**
- Custom `NSURLSessionConfiguration` init.
- :param: config The configuration used to manage the underlying session.
- */
--(instancetype)initWithConfig:(NSURLSessionConfiguration *)config;
-
-/**
  Start downloading the file at the given URL.
  
  :param: url NSURL of the file to download.
@@ -90,4 +84,6 @@ typedef enum {
  :return: An `Array` of all current downloads with the given state.
  */
 -(NSMutableArray *)currentDownloadsFilteredByState:(NSURLSessionTaskState)state;
+
+-(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler;
 @end

@@ -8,11 +8,30 @@
 
 #import "UAAppDelegate.h"
 
+#import <TCBlobDownloadManager.h>
+
+@interface UAAppDelegate ()
+@property (nonatomic, strong) TCBlobDownloadManager *manager;
+@end
+
 @implementation UAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    self.manager = [[TCBlobDownloadManager alloc] init];
+    self.manager.startImmediatly = YES;
+    [self.manager downloadFileAtURL:[NSURL URLWithString:@"http://mirror.internode.on.net/pub/test/100meg.test"]
+                        toDirectory:nil
+                           withName:nil
+                           progress:^(double progress,double speedRate, double time,int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite) {
+//                               NSLog(@"progress: %f", progress);
+                           }
+                         completion:^(NSError *error, NSURL *location) {
+                             NSLog(@"File at: %@", location);
+                         }];
+    
     return YES;
 }
 
@@ -41,6 +60,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler {
+    [self.manager application:application handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
 }
 
 @end

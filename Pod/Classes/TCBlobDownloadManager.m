@@ -85,6 +85,14 @@
     }
 }
 
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler {
+    NSLog(@"%s: application: %@ identifier: %@", __func__, application, identifier);
+    if ([identifier isEqualToString:self.backgroundSession.configuration.identifier]) {
+        //TO-DO
+    }
+    completionHandler();
+}
+
 -(TCBlobDownload *)downloadFileAtURL:(NSURL *)url toDirectory:(NSURL *)directory withName:(NSString *)name andDelegate:(id <TCBlobDownloadDelegate>)delegate {
     NSURLSessionDownloadTask *downloadTask = [self.activeSession downloadTaskWithURL:url];
     TCBlobDownload *download = [[TCBlobDownload alloc] initWithTask:downloadTask toDirectory:directory fileName:name delegate:delegate];
@@ -148,7 +156,6 @@
     NSError *fileError;
     NSURL *resultingURL;
     
-    
     BOOL result = [[NSFileManager defaultManager] replaceItemAtURL:download.destinationURL withItemAtURL:location backupItemName:nil options:NSFileManagerItemReplacementUsingNewMetadataOnly resultingItemURL:&resultingURL error:&fileError];
     if (result) {
         download.resultingURL = resultingURL;
@@ -158,28 +165,20 @@
 }
 
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
-    NSLog(@"%s: downloadTask: %@ downloads: %@",__func__, downloadTask, self.downloads);
+//    NSLog(@"%s: downloadTask: %@ downloads: %@",__func__, downloadTask, self.downloads);
     TCBlobDownload *download = self.downloads[@(downloadTask.taskIdentifier)];
-    double progress = (totalBytesExpectedToWrite == NSURLSessionTransferSizeUnknown) ? -1 : (double)totalBytesWritten / (double)totalBytesExpectedToWrite;
-    download.progress = progress;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if (download.delegate) {
-            [download.delegate download:download didProgress:progress totalBytesWritten:totalBytesWritten totalBytesExpectedToWrite:totalBytesExpectedToWrite];
-        }
-        
-        if (download.progressHandler) {
-            download.progressHandler(progress, totalBytesWritten, totalBytesExpectedToWrite);
-        }
-    });
+    if (download) {
+        [download URLSession:session downloadTask:downloadTask didWriteData:bytesWritten totalBytesWritten:totalBytesWritten totalBytesExpectedToWrite:totalBytesExpectedToWrite];
+    }
 }
 
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes {
-    NSLog(@"%s: downloadTask: %@ downloads: %@",__func__, downloadTask, self.downloads);
-    NSLog(@"Resume at offset: %lld total expected: %lld", fileOffset, expectedTotalBytes);
+//    NSLog(@"%s: downloadTask: %@ downloads: %@",__func__, downloadTask, self.downloads);
+//    NSLog(@"Resume at offset: %lld total expected: %lld", fileOffset, expectedTotalBytes);
 }
 
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(nullable NSError *)sessionError {
-    NSLog(@"%s: downloadTask: %@ error: %@ downloads: %@",__func__, task, sessionError, self.downloads);
+//    NSLog(@"%s: downloadTask: %@ error: %@ downloads: %@",__func__, task, sessionError, self.downloads);
     
     TCBlobDownload *download = self.downloads[@(task.taskIdentifier)];
     if (![task isEqual:download.downloadTask]) {
