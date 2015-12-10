@@ -18,6 +18,7 @@ static const NSInteger kNumberOfSamples = 5;
 @end
 
 @implementation TCBlobDownload
+@synthesize state = _state;
 
 -(instancetype)initWithTask:(NSURLSessionDownloadTask *)downloadTask toDirectory:(NSURL *)directory fileName:(NSString *)fileName delegate:(id<TCBlobDownloadDelegate>)delegate {
     if (self = [super init]) {
@@ -46,6 +47,13 @@ static const NSInteger kNumberOfSamples = 5;
 -(NSURL *)destinationURL {
     NSURL *destinationPath = self.directory ? self.directory : [NSURL fileURLWithPath:NSTemporaryDirectory()];
     return [[NSURL URLWithString:self.fileName relativeToURL:destinationPath] URLByStandardizingPath];
+}
+
+-(NSURLSessionTaskState)state {
+    if (self.downloadTask) {
+        return self.downloadTask.state;
+    }
+    return _state;
 }
 
 -(void)cancel {
@@ -121,19 +129,19 @@ static const NSInteger kNumberOfSamples = 5;
     NSNumber *receivedDataLength = @(self.receivedDataLength);
     NSNumber *expectedDataLength = @(self.expectedDataLength);
     
-    NSLog(@"timeDifference: %f", timeDifference);
-    NSLog(@"totalBytesWritten: %@", tBytesWritten);
-    NSLog(@"download.receivedDataLength: %@", receivedDataLength);
+//    NSLog(@"timeDifference: %f", timeDifference);
+//    NSLog(@"totalBytesWritten: %@", tBytesWritten);
+//    NSLog(@"download.receivedDataLength: %@", receivedDataLength);
     
     NSNumber *sample = @(([tBytesWritten doubleValue] - [receivedDataLength doubleValue]) / timeDifference);
-    NSLog(@"adding sample: %@", sample);
+//    NSLog(@"adding sample: %@", sample);
     
     [self.samplesOfDownloadedBytes addObject:sample];
     [self setReceivedDataLength:totalBytesWritten];
     self.speedRate = [[self.samplesOfDownloadedBytes valueForKeyPath:@"@avg.doubleValue"] doubleValue];
-    NSLog(@"speedRate: %f", self.speedRate);
+//    NSLog(@"speedRate: %f", self.speedRate);
     
     self.remainingTime = ([expectedDataLength doubleValue] - [receivedDataLength doubleValue]) / self.speedRate;
-    NSLog(@"remainingTime: %f", self.remainingTime);
+//    NSLog(@"remainingTime: %f", self.remainingTime);
 }
 @end

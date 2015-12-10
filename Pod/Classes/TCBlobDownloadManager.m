@@ -53,7 +53,9 @@
                     NSURLSessionDownloadTask *newDownloadTask = [self.backgroundSession downloadTaskWithResumeData:resumeData];
                     download.downloadTask = newDownloadTask;
                     self.delegate.downloads[@(newDownloadTask.taskIdentifier)] = download;
-                    [newDownloadTask resume];
+                    if (downloadTask.state == NSURLSessionTaskStateRunning) {
+                        [newDownloadTask resume];
+                    }
                 }];
             }
         }];
@@ -77,7 +79,9 @@
                     NSURLSessionDownloadTask *newDownloadTask = [self.foregroundSession downloadTaskWithResumeData:resumeData];
                     download.downloadTask = newDownloadTask;
                     self.delegate.downloads[@(newDownloadTask.taskIdentifier)] = download;
-                    [newDownloadTask resume];
+                    if (downloadTask.state == NSURLSessionTaskStateRunning) {
+                        [newDownloadTask resume];
+                    }
                 }];
             }
         }];
@@ -119,6 +123,27 @@
         }
     }
     return downloads;
+}
+
+-(void)cancelDownload:(TCBlobDownload *)download {
+    [download cancel];
+}
+
+-(void)suspendDownload:(TCBlobDownload *)download {
+    __weak typeof(download) weakDownload = download;
+    [download cancelWithResumeData:^(NSData *data) {
+        NSURLSessionDownloadTask *downloadTask = weakDownload.downloadTask;
+        [self.delegate.downloads removeObjectForKey:@(downloadTask.taskIdentifier)];
+        NSURLSessionDownloadTask *newDownloadTask = [self.activeSession downloadTaskWithResumeData:data];
+        download.downloadTask = newDownloadTask;
+        self.delegate.downloads[@(newDownloadTask.taskIdentifier)] = download;
+    }];
+}
+
+-(void)resumeDownload:(TCBlobDownload *)download {
+    if (download.downloadTask) {
+        [download.downloadTask resume];
+    }
 }
 
 /**

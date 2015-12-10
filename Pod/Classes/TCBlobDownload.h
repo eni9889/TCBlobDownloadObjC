@@ -60,6 +60,10 @@ typedef void (^TCBlobDownloadCompletionHandler)(NSError *error, NSURL *location)
 @property (nonatomic, copy) NSString *fileName;
 @property (nonatomic, strong) NSURL *destinationURL;
 
+@property (nonatomic, strong) NSData *resumeData;
+@property (nonatomic, copy) NSString *uniqueFileId;
+@property (nonatomic, assign) NSURLSessionTaskState state;
+
 /**
  Initialize a new download assuming the `NSURLSessionDownloadTask` was already created.
  

@@ -7,184 +7,153 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		061F722F3EAF94C18A85B68131C74A59 /* TCBlobDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F4245C469808F1113B6DFDEC04124F18 /* TCBlobDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0EAC3ADF81558DE6FB1791E4F43D0477 /* Pods-TCBlobDownloadObjC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E25501D220E6C567BE1675286D1E760 /* Pods-TCBlobDownloadObjC_Example-dummy.m */; };
-		39DC3B7E5EDC513DE3307DE556CDA57A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		3EC72D0CF1229E8E5FECAC01302389FA /* TCBlobDownloadObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E59F2094843C23DF0E24C1EE82E0EBE /* TCBlobDownloadObjC-dummy.m */; };
-		603F17608ADA3BA093FA979BCD6BEC2B /* Pods-TCBlobDownloadObjC_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE2D8745CD869FFDB2D981B8CCB1C5C /* Pods-TCBlobDownloadObjC_Tests-dummy.m */; };
-		8A62EAD6ED8D53ECCB80FD24A73F025B /* TCBlobDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1205123531F73C762CA1D8D75C723B /* TCBlobDownload.m */; };
-		AA1CA4F1943D7CB5A18923511063B7DE /* TCBlobDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 8264FB2CA1B5C66725D00226C0AD7617 /* TCBlobDownload.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFA11B46277C317BDB063410299D22D9 /* TCBlobDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7644CD6B8F8734F619D4FB4E3610DBB0 /* TCBlobDownloadManager.m */; };
-		C9DA36DD402D4221CA45B8F1247B798A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		E7FDA904931374FD0C08D05975E14D3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		0FA2FCE4B953C65C1F04C50D44651D9F /* TCBlobDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B421723618AED04C621A3351C5EBB51F /* TCBlobDownloadManager.m */; };
+		12E85A63C7A3B916FA2FE8815C3C225F /* TCBlobDownloadObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE53A7AD4973621C782620BDE4DF63C /* TCBlobDownloadObjC-dummy.m */; };
+		18F3A70D653C19093514FFC5747A81C3 /* TCBlobDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7297CE94253534741D2867E7A6BB8DBA /* TCBlobDownloadManager.h */; };
+		3201C26A27FB312DF3C0080159567BE5 /* Pods-TCBlobDownloadObjC_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 060D077C4296FF49592B8ECF4B7758CE /* Pods-TCBlobDownloadObjC_Tests-dummy.m */; };
+		463ECFA414CAB6ED717F4A0A464A3CFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFF9DF10F6B9D708EF72CFDEB572863 /* Foundation.framework */; };
+		8A96110FD7DDF1923D1C306C567E433E /* TCBlobDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AEA738EC73526CB563149A46562C97 /* TCBlobDownload.h */; };
+		994F219DFA7D362BFEED6AF1A62956B5 /* Pods-TCBlobDownloadObjC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132A875A7BD422A54FDD9EDC3173428 /* Pods-TCBlobDownloadObjC_Example-dummy.m */; };
+		A377FC80A638990932A8960EC4BC3B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFF9DF10F6B9D708EF72CFDEB572863 /* Foundation.framework */; };
+		F70DD2A8635BCEE6F1526D9D2B6F63E3 /* TCBlobDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A7050306B2E2015A7215C101C2E8BC /* TCBlobDownload.m */; };
+		FDAA21F0B59DA3AC93D7C54486DB967F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFF9DF10F6B9D708EF72CFDEB572863 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		909AB906A59956CB576C3B86673BC44F /* PBXContainerItemProxy */ = {
+		0B25A76D55346557CF1CADFDDF4E377E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A9752E658E1E8D9C4FFF5191B58215A6;
-			remoteInfo = "TCBlobDownloadObjC-TCBlobDownloadObjC";
-		};
-		AAF9FF0F59BDB6CE67A7AD196B1F2565 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB6CCC5EF70DC68888E68F95778C1DC2;
+			remoteGlobalIDString = 060AA6A1FFA1731B1B1768AB0DC3A23A;
 			remoteInfo = TCBlobDownloadObjC;
 		};
-		D8EB5C2B2EA354E6724E95DDE3AF8A65 /* PBXContainerItemProxy */ = {
+		2604A90C2CEAF28DC1A1420AE5D9BBDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BB6CCC5EF70DC68888E68F95778C1DC2;
+			remoteGlobalIDString = 5901135EDC7461EB7B1C2855E43A7317;
+			remoteInfo = "TCBlobDownloadObjC-TCBlobDownloadObjC";
+		};
+		F0C92C18DF87F0749C9715B61EB3D62D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 060AA6A1FFA1731B1B1768AB0DC3A23A;
 			remoteInfo = TCBlobDownloadObjC;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BAC5BA59089F0E660241501DAC74765 /* Pods-TCBlobDownloadObjC_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBlobDownloadObjC_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		1E25501D220E6C567BE1675286D1E760 /* Pods-TCBlobDownloadObjC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCBlobDownloadObjC_Example-dummy.m"; sourceTree = "<group>"; };
-		2CE2030ED1463E600BE8FC54DEA47017 /* TCBlobDownloadObjC.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCBlobDownloadObjC.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CE2D8745CD869FFDB2D981B8CCB1C5C /* Pods-TCBlobDownloadObjC_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCBlobDownloadObjC_Tests-dummy.m"; sourceTree = "<group>"; };
-		30787FAE3B95B323CCB015F53F0B4108 /* Pods-TCBlobDownloadObjC_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBlobDownloadObjC_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3D707379F5B3A65642C65C209CBE83C5 /* TCBlobDownloadObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCBlobDownloadObjC-prefix.pch"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4C1205123531F73C762CA1D8D75C723B /* TCBlobDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownload.m; sourceTree = "<group>"; };
-		5119C399DAFFF53F6DCBD5D23347995B /* Pods-TCBlobDownloadObjC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5638848D64453B058399152E677D4842 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBlobDownloadObjC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6F632FEABCE64CB14CA6D0FC787FB553 /* Pods-TCBlobDownloadObjC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7644CD6B8F8734F619D4FB4E3610DBB0 /* TCBlobDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownloadManager.m; sourceTree = "<group>"; };
-		7E004D6EE880A0CF05135BBB2A63AFD3 /* Pods-TCBlobDownloadObjC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8264FB2CA1B5C66725D00226C0AD7617 /* TCBlobDownload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBlobDownload.h; sourceTree = "<group>"; };
-		8CAA3B671D9004D6335A2131649CF54E /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBlobDownloadObjC_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9687F1A186A98CB0377300F2C869E363 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBlobDownloadObjC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9E59F2094843C23DF0E24C1EE82E0EBE /* TCBlobDownloadObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCBlobDownloadObjC-dummy.m"; sourceTree = "<group>"; };
-		A17FAE2DB2C76EAEED19A750179F553C /* Pods-TCBlobDownloadObjC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B79651C59044DB439D35A1929890DD1E /* libTCBlobDownloadObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTCBlobDownloadObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7ADAECF929B60F8A172329ABE848525 /* Pods-TCBlobDownloadObjC_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBlobDownloadObjC_Tests-resources.sh"; sourceTree = "<group>"; };
-		B9C728B6049C940CC40BF09E6A5573B5 /* TCBlobDownloadObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCBlobDownloadObjC.xcconfig; sourceTree = "<group>"; };
+		01AEA738EC73526CB563149A46562C97 /* TCBlobDownload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBlobDownload.h; sourceTree = "<group>"; };
+		03A7050306B2E2015A7215C101C2E8BC /* TCBlobDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownload.m; sourceTree = "<group>"; };
+		060D077C4296FF49592B8ECF4B7758CE /* Pods-TCBlobDownloadObjC_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCBlobDownloadObjC_Tests-dummy.m"; sourceTree = "<group>"; };
+		21402B7A5A5827951FD923AD06E7EE7D /* Pods-TCBlobDownloadObjC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2C37DE290365D0870B4676BE9CFE6A39 /* Pods-TCBlobDownloadObjC_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBlobDownloadObjC_Example-resources.sh"; sourceTree = "<group>"; };
+		3132A875A7BD422A54FDD9EDC3173428 /* Pods-TCBlobDownloadObjC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCBlobDownloadObjC_Example-dummy.m"; sourceTree = "<group>"; };
+		5718D4A848C712F040AF8C3FC390294D /* Pods-TCBlobDownloadObjC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		57BDD779C5870A18B19D97D97E6F6D81 /* TCBlobDownloadObjC-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TCBlobDownloadObjC-Private.xcconfig"; sourceTree = "<group>"; };
+		5DFF9DF10F6B9D708EF72CFDEB572863 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6752CA61CB07F82A2AB66C2D7F8B1B0D /* Pods-TCBlobDownloadObjC_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBlobDownloadObjC_Tests-resources.sh"; sourceTree = "<group>"; };
+		7297CE94253534741D2867E7A6BB8DBA /* TCBlobDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBlobDownloadManager.h; sourceTree = "<group>"; };
+		74B1A851C8E756ADCDD83D4EB0A7D2FF /* TCBlobDownloadObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCBlobDownloadObjC.xcconfig; sourceTree = "<group>"; };
+		99A28B5BB720D7C482FDAFED05CCE990 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBlobDownloadObjC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9EE53A7AD4973621C782620BDE4DF63C /* TCBlobDownloadObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCBlobDownloadObjC-dummy.m"; sourceTree = "<group>"; };
+		A8518091B4A7661DCC1C97918379E057 /* libPods-TCBlobDownloadObjC_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCBlobDownloadObjC_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC51FF45A6FD9055C3D1AD9834D6A0C4 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBlobDownloadObjC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B421723618AED04C621A3351C5EBB51F /* TCBlobDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownloadManager.m; sourceTree = "<group>"; };
+		B65DA1113984243D63A6EA3ABC5E1233 /* TCBlobDownloadObjC.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCBlobDownloadObjC.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C0574ACA4DC99B65EF07FAB641D9738C /* Pods-TCBlobDownloadObjC_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBlobDownloadObjC_Example-resources.sh"; sourceTree = "<group>"; };
-		C181E957D7A6BC0CB7AB68FD4D68C8BB /* libPods-TCBlobDownloadObjC_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCBlobDownloadObjC_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE6EDAE6E9AAD8D2E3ED00E03EEF6C9D /* libPods-TCBlobDownloadObjC_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCBlobDownloadObjC_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4245C469808F1113B6DFDEC04124F18 /* TCBlobDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBlobDownloadManager.h; sourceTree = "<group>"; };
-		F817AFB49C8F370A4B78F7554543D54A /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBlobDownloadObjC_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D92426310FB0123298E823EDF4F3A306 /* libTCBlobDownloadObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTCBlobDownloadObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26AF36E6370245DB8575D30F2267D31 /* libPods-TCBlobDownloadObjC_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCBlobDownloadObjC_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8972DDEA215BAA23239363D7A599862 /* Pods-TCBlobDownloadObjC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F54690D9E9D49EBC3644C4C11AA3833C /* Pods-TCBlobDownloadObjC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBlobDownloadObjC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6EC751BACD1DF488FEA7EAD110ACFE6 /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBlobDownloadObjC_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F70A452030012E8BDB91685334D5B2CC /* TCBlobDownloadObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCBlobDownloadObjC-prefix.pch"; sourceTree = "<group>"; };
+		FEA3798546BAF08E936F579BD9DC4276 /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBlobDownloadObjC_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		27483895AE3F9272B1ECE7B5B2A356FB /* Frameworks */ = {
+		212F0F2EBC6A9A2732FEA46C78CA7B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A377FC80A638990932A8960EC4BC3B86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7FC7959DE48307DB5DF5DE41C0DD71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAA21F0B59DA3AC93D7C54486DB967F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8673A691AF7CDFBC5C428E5024AD86A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7974987068D162A3E4D8777DC48A7DC4 /* Frameworks */ = {
+		B9306AB4E97407946986F725D967D2B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39DC3B7E5EDC513DE3307DE556CDA57A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF7615D11A667DDEFE48ED40CDA94B96 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9DA36DD402D4221CA45B8F1247B798A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E00DEC4B605799155DD9D939A6FFFF4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7FDA904931374FD0C08D05975E14D3B /* Foundation.framework in Frameworks */,
+				463ECFA414CAB6ED717F4A0A464A3CFC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E36B04E67DB9F82AD3B26DA9CAAFC4 /* Targets Support Files */ = {
+		517FD8F64DBEB902A06D781E6168B8BB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				46E03E3FBD720395B7DF44A7FDBA374D /* Pods-TCBlobDownloadObjC_Example */,
-				2D76A1101D7AE87EF718CF73DB2CF98F /* Pods-TCBlobDownloadObjC_Tests */,
+				57A114539ED26663A757FD3BAE857A82 /* Classes */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		064434A7362A7ECC21E24B1BBC3E3BDA /* TCBlobDownloadObjC */ = {
-			isa = PBXGroup;
-			children = (
-				AB44E8106BF2D71167D29E7BFFEC52B1 /* Pod */,
-				28DE02CC7FCA4B8D62909FC444A58ECE /* Support Files */,
-			);
-			name = TCBlobDownloadObjC;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		28DE02CC7FCA4B8D62909FC444A58ECE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B9C728B6049C940CC40BF09E6A5573B5 /* TCBlobDownloadObjC.xcconfig */,
-				9E59F2094843C23DF0E24C1EE82E0EBE /* TCBlobDownloadObjC-dummy.m */,
-				3D707379F5B3A65642C65C209CBE83C5 /* TCBlobDownloadObjC-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TCBlobDownloadObjC";
-			sourceTree = "<group>";
-		};
-		2D76A1101D7AE87EF718CF73DB2CF98F /* Pods-TCBlobDownloadObjC_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F817AFB49C8F370A4B78F7554543D54A /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.markdown */,
-				8CAA3B671D9004D6335A2131649CF54E /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.plist */,
-				2CE2D8745CD869FFDB2D981B8CCB1C5C /* Pods-TCBlobDownloadObjC_Tests-dummy.m */,
-				0BAC5BA59089F0E660241501DAC74765 /* Pods-TCBlobDownloadObjC_Tests-frameworks.sh */,
-				B7ADAECF929B60F8A172329ABE848525 /* Pods-TCBlobDownloadObjC_Tests-resources.sh */,
-				7E004D6EE880A0CF05135BBB2A63AFD3 /* Pods-TCBlobDownloadObjC_Tests.debug.xcconfig */,
-				5119C399DAFFF53F6DCBD5D23347995B /* Pods-TCBlobDownloadObjC_Tests.release.xcconfig */,
-			);
-			name = "Pods-TCBlobDownloadObjC_Tests";
-			path = "Target Support Files/Pods-TCBlobDownloadObjC_Tests";
-			sourceTree = "<group>";
-		};
-		46E03E3FBD720395B7DF44A7FDBA374D /* Pods-TCBlobDownloadObjC_Example */ = {
-			isa = PBXGroup;
-			children = (
-				5638848D64453B058399152E677D4842 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.markdown */,
-				9687F1A186A98CB0377300F2C869E363 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.plist */,
-				1E25501D220E6C567BE1675286D1E760 /* Pods-TCBlobDownloadObjC_Example-dummy.m */,
-				30787FAE3B95B323CCB015F53F0B4108 /* Pods-TCBlobDownloadObjC_Example-frameworks.sh */,
-				C0574ACA4DC99B65EF07FAB641D9738C /* Pods-TCBlobDownloadObjC_Example-resources.sh */,
-				6F632FEABCE64CB14CA6D0FC787FB553 /* Pods-TCBlobDownloadObjC_Example.debug.xcconfig */,
-				A17FAE2DB2C76EAEED19A750179F553C /* Pods-TCBlobDownloadObjC_Example.release.xcconfig */,
-			);
-			name = "Pods-TCBlobDownloadObjC_Example";
-			path = "Target Support Files/Pods-TCBlobDownloadObjC_Example";
-			sourceTree = "<group>";
-		};
-		4C15D47F4DBE5FA14BD363B7A82AB012 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8264FB2CA1B5C66725D00226C0AD7617 /* TCBlobDownload.h */,
-				4C1205123531F73C762CA1D8D75C723B /* TCBlobDownload.m */,
-				F4245C469808F1113B6DFDEC04124F18 /* TCBlobDownloadManager.h */,
-				7644CD6B8F8734F619D4FB4E3610DBB0 /* TCBlobDownloadManager.m */,
-			);
-			path = Classes;
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		52C28A45233C038963B44F9198543721 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				064434A7362A7ECC21E24B1BBC3E3BDA /* TCBlobDownloadObjC */,
+				D4EA4F50F2F651B4D54A20D71CC0220B /* TCBlobDownloadObjC */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5DFF9DF10F6B9D708EF72CFDEB572863 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		57A114539ED26663A757FD3BAE857A82 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				01AEA738EC73526CB563149A46562C97 /* TCBlobDownload.h */,
+				03A7050306B2E2015A7215C101C2E8BC /* TCBlobDownload.m */,
+				7297CE94253534741D2867E7A6BB8DBA /* TCBlobDownloadManager.h */,
+				B421723618AED04C621A3351C5EBB51F /* TCBlobDownloadManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		77BA82CDC47B47AF09916CAE82FB6928 /* Pods-TCBlobDownloadObjC_Example */ = {
+			isa = PBXGroup;
+			children = (
+				99A28B5BB720D7C482FDAFED05CCE990 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.markdown */,
+				AC51FF45A6FD9055C3D1AD9834D6A0C4 /* Pods-TCBlobDownloadObjC_Example-acknowledgements.plist */,
+				3132A875A7BD422A54FDD9EDC3173428 /* Pods-TCBlobDownloadObjC_Example-dummy.m */,
+				2C37DE290365D0870B4676BE9CFE6A39 /* Pods-TCBlobDownloadObjC_Example-resources.sh */,
+				21402B7A5A5827951FD923AD06E7EE7D /* Pods-TCBlobDownloadObjC_Example.debug.xcconfig */,
+				E8972DDEA215BAA23239363D7A599862 /* Pods-TCBlobDownloadObjC_Example.release.xcconfig */,
+			);
+			name = "Pods-TCBlobDownloadObjC_Example";
+			path = "Target Support Files/Pods-TCBlobDownloadObjC_Example";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -193,68 +162,149 @@
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				52C28A45233C038963B44F9198543721 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				87ADA34328281685381724DF20A1F985 /* Products */,
-				00E36B04E67DB9F82AD3B26DA9CAAFC4 /* Targets Support Files */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				83EDD9C3AEE6E990FCABDE81677F5623 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		87ADA34328281685381724DF20A1F985 /* Products */ = {
+		83EDD9C3AEE6E990FCABDE81677F5623 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DE6EDAE6E9AAD8D2E3ED00E03EEF6C9D /* libPods-TCBlobDownloadObjC_Example.a */,
-				C181E957D7A6BC0CB7AB68FD4D68C8BB /* libPods-TCBlobDownloadObjC_Tests.a */,
-				B79651C59044DB439D35A1929890DD1E /* libTCBlobDownloadObjC.a */,
-				2CE2030ED1463E600BE8FC54DEA47017 /* TCBlobDownloadObjC.bundle */,
+				77BA82CDC47B47AF09916CAE82FB6928 /* Pods-TCBlobDownloadObjC_Example */,
+				8892C1B77F9E5A3AE3AD78F3FEAF8B9D /* Pods-TCBlobDownloadObjC_Tests */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AB44E8106BF2D71167D29E7BFFEC52B1 /* Pod */ = {
+		8892C1B77F9E5A3AE3AD78F3FEAF8B9D /* Pods-TCBlobDownloadObjC_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				4C15D47F4DBE5FA14BD363B7A82AB012 /* Classes */,
+				F6EC751BACD1DF488FEA7EAD110ACFE6 /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.markdown */,
+				FEA3798546BAF08E936F579BD9DC4276 /* Pods-TCBlobDownloadObjC_Tests-acknowledgements.plist */,
+				060D077C4296FF49592B8ECF4B7758CE /* Pods-TCBlobDownloadObjC_Tests-dummy.m */,
+				6752CA61CB07F82A2AB66C2D7F8B1B0D /* Pods-TCBlobDownloadObjC_Tests-resources.sh */,
+				F54690D9E9D49EBC3644C4C11AA3833C /* Pods-TCBlobDownloadObjC_Tests.debug.xcconfig */,
+				5718D4A848C712F040AF8C3FC390294D /* Pods-TCBlobDownloadObjC_Tests.release.xcconfig */,
 			);
-			path = Pod;
+			name = "Pods-TCBlobDownloadObjC_Tests";
+			path = "Target Support Files/Pods-TCBlobDownloadObjC_Tests";
+			sourceTree = "<group>";
+		};
+		9746058B3A47B4232AC5250CC355AF7A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74B1A851C8E756ADCDD83D4EB0A7D2FF /* TCBlobDownloadObjC.xcconfig */,
+				57BDD779C5870A18B19D97D97E6F6D81 /* TCBlobDownloadObjC-Private.xcconfig */,
+				9EE53A7AD4973621C782620BDE4DF63C /* TCBlobDownloadObjC-dummy.m */,
+				F70A452030012E8BDB91685334D5B2CC /* TCBlobDownloadObjC-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TCBlobDownloadObjC";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+				B65DA1113984243D63A6EA3ABC5E1233 /* TCBlobDownloadObjC.bundle */,
+				A8518091B4A7661DCC1C97918379E057 /* libPods-TCBlobDownloadObjC_Example.a */,
+				E26AF36E6370245DB8575D30F2267D31 /* libPods-TCBlobDownloadObjC_Tests.a */,
+				D92426310FB0123298E823EDF4F3A306 /* libTCBlobDownloadObjC.a */,
 			);
-			name = iOS;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4EA4F50F2F651B4D54A20D71CC0220B /* TCBlobDownloadObjC */ = {
+			isa = PBXGroup;
+			children = (
+				517FD8F64DBEB902A06D781E6168B8BB /* Pod */,
+				9746058B3A47B4232AC5250CC355AF7A /* Support Files */,
+			);
+			name = TCBlobDownloadObjC;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E1F72F04B1475023723D6A77C5257629 /* Headers */ = {
+		D095E05D78D6CB0DD9B9AE6076478F82 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA1CA4F1943D7CB5A18923511063B7DE /* TCBlobDownload.h in Headers */,
-				061F722F3EAF94C18A85B68131C74A59 /* TCBlobDownloadManager.h in Headers */,
+				8A96110FD7DDF1923D1C306C567E433E /* TCBlobDownload.h in Headers */,
+				18F3A70D653C19093514FFC5747A81C3 /* TCBlobDownloadManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A9752E658E1E8D9C4FFF5191B58215A6 /* TCBlobDownloadObjC-TCBlobDownloadObjC */ = {
+		060AA6A1FFA1731B1B1768AB0DC3A23A /* TCBlobDownloadObjC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99C49870EE7C499C2CEA98D10F9D94B6 /* Build configuration list for PBXNativeTarget "TCBlobDownloadObjC-TCBlobDownloadObjC" */;
+			buildConfigurationList = 63FF9392FB7AD7F926EF523076B9A03D /* Build configuration list for PBXNativeTarget "TCBlobDownloadObjC" */;
 			buildPhases = (
-				AD75DA116A8324B9990438226F130384 /* Sources */,
-				27483895AE3F9272B1ECE7B5B2A356FB /* Frameworks */,
-				F198731EED5170A5EB38FF68BE9A70F8 /* Resources */,
+				24AFAD1D4766B88AA0F599F0BEA1D5BB /* Sources */,
+				B9306AB4E97407946986F725D967D2B0 /* Frameworks */,
+				D095E05D78D6CB0DD9B9AE6076478F82 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EB05C7DF4323FDFEFF89724DBDA2CEF /* PBXTargetDependency */,
+			);
+			name = TCBlobDownloadObjC;
+			productName = TCBlobDownloadObjC;
+			productReference = D92426310FB0123298E823EDF4F3A306 /* libTCBlobDownloadObjC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4FF71AF4DB453DA283C3D6787183FE50 /* Pods-TCBlobDownloadObjC_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591724F9D4296BC994A9D6BC6E0BCDDE /* Build configuration list for PBXNativeTarget "Pods-TCBlobDownloadObjC_Tests" */;
+			buildPhases = (
+				1BF36BAD268B5CBDC98F925531A3CA3C /* Sources */,
+				212F0F2EBC6A9A2732FEA46C78CA7B39 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDACF2B7EBB7EF56E9B3AC702C342938 /* PBXTargetDependency */,
+			);
+			name = "Pods-TCBlobDownloadObjC_Tests";
+			productName = "Pods-TCBlobDownloadObjC_Tests";
+			productReference = E26AF36E6370245DB8575D30F2267D31 /* libPods-TCBlobDownloadObjC_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5440B3CC81DCEDBEFC952D61CDF2784E /* Pods-TCBlobDownloadObjC_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED21FAF024A986194CE859CC625C393 /* Build configuration list for PBXNativeTarget "Pods-TCBlobDownloadObjC_Example" */;
+			buildPhases = (
+				EE0C6D0DF4BBDF8AA2BCE9E83243F932 /* Sources */,
+				7D7FC7959DE48307DB5DF5DE41C0DD71 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847B04F9DF33100E5D1C449B5D1EAA9B /* PBXTargetDependency */,
+			);
+			name = "Pods-TCBlobDownloadObjC_Example";
+			productName = "Pods-TCBlobDownloadObjC_Example";
+			productReference = A8518091B4A7661DCC1C97918379E057 /* libPods-TCBlobDownloadObjC_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5901135EDC7461EB7B1C2855E43A7317 /* TCBlobDownloadObjC-TCBlobDownloadObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17B4DBB52DAB27CB57A2E6F11AB86A59 /* Build configuration list for PBXNativeTarget "TCBlobDownloadObjC-TCBlobDownloadObjC" */;
+			buildPhases = (
+				F52ECFC125CBBE95192C14528B9B48D3 /* Sources */,
+				8673A691AF7CDFBC5C428E5024AD86A5 /* Frameworks */,
+				F575C4EF82A6553F3CC073FD914C23F8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -262,60 +312,8 @@
 			);
 			name = "TCBlobDownloadObjC-TCBlobDownloadObjC";
 			productName = "TCBlobDownloadObjC-TCBlobDownloadObjC";
-			productReference = 2CE2030ED1463E600BE8FC54DEA47017 /* TCBlobDownloadObjC.bundle */;
+			productReference = B65DA1113984243D63A6EA3ABC5E1233 /* TCBlobDownloadObjC.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		A9F80342029D5472E36DCC3FB0CDAE27 /* Pods-TCBlobDownloadObjC_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5F9E43AB9046D5CA8EBD60264509766 /* Build configuration list for PBXNativeTarget "Pods-TCBlobDownloadObjC_Example" */;
-			buildPhases = (
-				EF36E50FA5ADFA814A34DDA2D30FB95B /* Sources */,
-				E00DEC4B605799155DD9D939A6FFFF4D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DB992D503E50A1E69D3EC001446F1E1B /* PBXTargetDependency */,
-			);
-			name = "Pods-TCBlobDownloadObjC_Example";
-			productName = "Pods-TCBlobDownloadObjC_Example";
-			productReference = DE6EDAE6E9AAD8D2E3ED00E03EEF6C9D /* libPods-TCBlobDownloadObjC_Example.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		BB6CCC5EF70DC68888E68F95778C1DC2 /* TCBlobDownloadObjC */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8D3897812D4208B1889D17495342D547 /* Build configuration list for PBXNativeTarget "TCBlobDownloadObjC" */;
-			buildPhases = (
-				B045A6981369CF700718CB1B5C6782FB /* Sources */,
-				7974987068D162A3E4D8777DC48A7DC4 /* Frameworks */,
-				E1F72F04B1475023723D6A77C5257629 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2BA1071370AE457A61F8F4F4DE9DBD2F /* PBXTargetDependency */,
-			);
-			name = TCBlobDownloadObjC;
-			productName = TCBlobDownloadObjC;
-			productReference = B79651C59044DB439D35A1929890DD1E /* libTCBlobDownloadObjC.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		EC5CEF6914B2BB90FA42494379D3FFB0 /* Pods-TCBlobDownloadObjC_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9CE24FF68018BA0236DD4E03F9DA0E2A /* Build configuration list for PBXNativeTarget "Pods-TCBlobDownloadObjC_Tests" */;
-			buildPhases = (
-				319309C438D96AF10A7CB9EEB83138F9 /* Sources */,
-				DF7615D11A667DDEFE48ED40CDA94B96 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				71E544BBA9CA48176C9C91E622E56EF8 /* PBXTargetDependency */,
-			);
-			name = "Pods-TCBlobDownloadObjC_Tests";
-			productName = "Pods-TCBlobDownloadObjC_Tests";
-			productReference = C181E957D7A6BC0CB7AB68FD4D68C8BB /* libPods-TCBlobDownloadObjC_Tests.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -334,20 +332,20 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 87ADA34328281685381724DF20A1F985 /* Products */;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9F80342029D5472E36DCC3FB0CDAE27 /* Pods-TCBlobDownloadObjC_Example */,
-				EC5CEF6914B2BB90FA42494379D3FFB0 /* Pods-TCBlobDownloadObjC_Tests */,
-				BB6CCC5EF70DC68888E68F95778C1DC2 /* TCBlobDownloadObjC */,
-				A9752E658E1E8D9C4FFF5191B58215A6 /* TCBlobDownloadObjC-TCBlobDownloadObjC */,
+				5440B3CC81DCEDBEFC952D61CDF2784E /* Pods-TCBlobDownloadObjC_Example */,
+				4FF71AF4DB453DA283C3D6787183FE50 /* Pods-TCBlobDownloadObjC_Tests */,
+				060AA6A1FFA1731B1B1768AB0DC3A23A /* TCBlobDownloadObjC */,
+				5901135EDC7461EB7B1C2855E43A7317 /* TCBlobDownloadObjC-TCBlobDownloadObjC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F198731EED5170A5EB38FF68BE9A70F8 /* Resources */ = {
+		F575C4EF82A6553F3CC073FD914C23F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,59 +355,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		319309C438D96AF10A7CB9EEB83138F9 /* Sources */ = {
+		1BF36BAD268B5CBDC98F925531A3CA3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				603F17608ADA3BA093FA979BCD6BEC2B /* Pods-TCBlobDownloadObjC_Tests-dummy.m in Sources */,
+				3201C26A27FB312DF3C0080159567BE5 /* Pods-TCBlobDownloadObjC_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD75DA116A8324B9990438226F130384 /* Sources */ = {
+		24AFAD1D4766B88AA0F599F0BEA1D5BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70DD2A8635BCEE6F1526D9D2B6F63E3 /* TCBlobDownload.m in Sources */,
+				0FA2FCE4B953C65C1F04C50D44651D9F /* TCBlobDownloadManager.m in Sources */,
+				12E85A63C7A3B916FA2FE8815C3C225F /* TCBlobDownloadObjC-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B045A6981369CF700718CB1B5C6782FB /* Sources */ = {
+		EE0C6D0DF4BBDF8AA2BCE9E83243F932 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A62EAD6ED8D53ECCB80FD24A73F025B /* TCBlobDownload.m in Sources */,
-				BFA11B46277C317BDB063410299D22D9 /* TCBlobDownloadManager.m in Sources */,
-				3EC72D0CF1229E8E5FECAC01302389FA /* TCBlobDownloadObjC-dummy.m in Sources */,
+				994F219DFA7D362BFEED6AF1A62956B5 /* Pods-TCBlobDownloadObjC_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF36E50FA5ADFA814A34DDA2D30FB95B /* Sources */ = {
+		F52ECFC125CBBE95192C14528B9B48D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EAC3ADF81558DE6FB1791E4F43D0477 /* Pods-TCBlobDownloadObjC_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2BA1071370AE457A61F8F4F4DE9DBD2F /* PBXTargetDependency */ = {
+		5EB05C7DF4323FDFEFF89724DBDA2CEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "TCBlobDownloadObjC-TCBlobDownloadObjC";
-			target = A9752E658E1E8D9C4FFF5191B58215A6 /* TCBlobDownloadObjC-TCBlobDownloadObjC */;
-			targetProxy = 909AB906A59956CB576C3B86673BC44F /* PBXContainerItemProxy */;
+			target = 5901135EDC7461EB7B1C2855E43A7317 /* TCBlobDownloadObjC-TCBlobDownloadObjC */;
+			targetProxy = 2604A90C2CEAF28DC1A1420AE5D9BBDC /* PBXContainerItemProxy */;
 		};
-		71E544BBA9CA48176C9C91E622E56EF8 /* PBXTargetDependency */ = {
+		847B04F9DF33100E5D1C449B5D1EAA9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TCBlobDownloadObjC;
-			target = BB6CCC5EF70DC68888E68F95778C1DC2 /* TCBlobDownloadObjC */;
-			targetProxy = D8EB5C2B2EA354E6724E95DDE3AF8A65 /* PBXContainerItemProxy */;
+			target = 060AA6A1FFA1731B1B1768AB0DC3A23A /* TCBlobDownloadObjC */;
+			targetProxy = F0C92C18DF87F0749C9715B61EB3D62D /* PBXContainerItemProxy */;
 		};
-		DB992D503E50A1E69D3EC001446F1E1B /* PBXTargetDependency */ = {
+		BDACF2B7EBB7EF56E9B3AC702C342938 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TCBlobDownloadObjC;
-			target = BB6CCC5EF70DC68888E68F95778C1DC2 /* TCBlobDownloadObjC */;
-			targetProxy = AAF9FF0F59BDB6CE67A7AD196B1F2565 /* PBXContainerItemProxy */;
+			target = 060AA6A1FFA1731B1B1768AB0DC3A23A /* TCBlobDownloadObjC */;
+			targetProxy = 0B25A76D55346557CF1CADFDDF4E377E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -445,24 +443,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		0473C487922107066BBC4144325449EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9C728B6049C940CC40BF09E6A5573B5 /* TCBlobDownloadObjC.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TCBlobDownloadObjC/TCBlobDownloadObjC-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -505,26 +485,9 @@
 			};
 			name = Debug;
 		};
-		12CD8EDC945B4F4F2E1E9AD2DA69F3AE /* Release */ = {
+		5C892FEDC66FDC1AC83CB680C7437E84 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5119C399DAFFF53F6DCBD5D23347995B /* Pods-TCBlobDownloadObjC_Tests.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		2DF550312BF97DA59D8E58DEFEBADC8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9C728B6049C940CC40BF09E6A5573B5 /* TCBlobDownloadObjC.xcconfig */;
+			baseConfigurationReference = 57BDD779C5870A18B19D97D97E6F6D81 /* TCBlobDownloadObjC-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = TCBlobDownloadObjC;
@@ -534,13 +497,12 @@
 			};
 			name = Release;
 		};
-		78A6B7F1D0096934FDF4443379A43ED9 /* Release */ = {
+		5F02D9459F450FC7E2FF2FBBEA522F85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A17FAE2DB2C76EAEED19A750179F553C /* Pods-TCBlobDownloadObjC_Example.release.xcconfig */;
+			baseConfigurationReference = 5718D4A848C712F040AF8C3FC390294D /* Pods-TCBlobDownloadObjC_Tests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -551,26 +513,9 @@
 			};
 			name = Release;
 		};
-		79EC35F856D9E8A8D183E06891CA7AAB /* Debug */ = {
+		7747028F77C126E1C7EBE3FBD857ADD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E004D6EE880A0CF05135BBB2A63AFD3 /* Pods-TCBlobDownloadObjC_Tests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		88D7A6E8767184F5E3AF494DE3B1C27E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9C728B6049C940CC40BF09E6A5573B5 /* TCBlobDownloadObjC.xcconfig */;
+			baseConfigurationReference = 57BDD779C5870A18B19D97D97E6F6D81 /* TCBlobDownloadObjC-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/TCBlobDownloadObjC/TCBlobDownloadObjC-prefix.pch";
@@ -578,33 +523,34 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		8F693EE3163F8E566E44F09704720189 /* Debug */ = {
+		7B0C33944C53D0F711A8BC6374A41D1E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9C728B6049C940CC40BF09E6A5573B5 /* TCBlobDownloadObjC.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = TCBlobDownloadObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		BA9793F26D59FA2AB55D83209291A7BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F632FEABCE64CB14CA6D0FC787FB553 /* Pods-TCBlobDownloadObjC_Example.debug.xcconfig */;
+			baseConfigurationReference = E8972DDEA215BAA23239363D7A599862 /* Pods-TCBlobDownloadObjC_Example.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		97B95B4E24445B766E86C01840D3F61F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21402B7A5A5827951FD923AD06E7EE7D /* Pods-TCBlobDownloadObjC_Example.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -615,9 +561,62 @@
 			};
 			name = Debug;
 		};
+		A9AF91BD4B2C7EE6B27D00D8ECFB90DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57BDD779C5870A18B19D97D97E6F6D81 /* TCBlobDownloadObjC-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = TCBlobDownloadObjC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B5796AF4D3B3840AA0B55BE46CF7295F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54690D9E9D49EBC3644C4C11AA3833C /* Pods-TCBlobDownloadObjC_Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EB16DBBB12FB56FCD774F14C530A8BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57BDD779C5870A18B19D97D97E6F6D81 /* TCBlobDownloadObjC-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TCBlobDownloadObjC/TCBlobDownloadObjC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17B4DBB52DAB27CB57A2E6F11AB86A59 /* Build configuration list for PBXNativeTarget "TCBlobDownloadObjC-TCBlobDownloadObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AF91BD4B2C7EE6B27D00D8ECFB90DA /* Debug */,
+				5C892FEDC66FDC1AC83CB680C7437E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -627,38 +626,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D3897812D4208B1889D17495342D547 /* Build configuration list for PBXNativeTarget "TCBlobDownloadObjC" */ = {
+		591724F9D4296BC994A9D6BC6E0BCDDE /* Build configuration list for PBXNativeTarget "Pods-TCBlobDownloadObjC_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88D7A6E8767184F5E3AF494DE3B1C27E /* Debug */,
-				0473C487922107066BBC4144325449EE /* Release */,
+				B5796AF4D3B3840AA0B55BE46CF7295F /* Debug */,
+				5F02D9459F450FC7E2FF2FBBEA522F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99C49870EE7C499C2CEA98D10F9D94B6 /* Build configuration list for PBXNativeTarget "TCBlobDownloadObjC-TCBlobDownloadObjC" */ = {
+		63FF9392FB7AD7F926EF523076B9A03D /* Build configuration list for PBXNativeTarget "TCBlobDownloadObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F693EE3163F8E566E44F09704720189 /* Debug */,
-				2DF550312BF97DA59D8E58DEFEBADC8A /* Release */,
+				7747028F77C126E1C7EBE3FBD857ADD3 /* Debug */,
+				EB16DBBB12FB56FCD774F14C530A8BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CE24FF68018BA0236DD4E03F9DA0E2A /* Build configuration list for PBXNativeTarget "Pods-TCBlobDownloadObjC_Tests" */ = {
+		8ED21FAF024A986194CE859CC625C393 /* Build configuration list for PBXNativeTarget "Pods-TCBlobDownloadObjC_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79EC35F856D9E8A8D183E06891CA7AAB /* Debug */,
-				12CD8EDC945B4F4F2E1E9AD2DA69F3AE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5F9E43AB9046D5CA8EBD60264509766 /* Build configuration list for PBXNativeTarget "Pods-TCBlobDownloadObjC_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA9793F26D59FA2AB55D83209291A7BD /* Debug */,
-				78A6B7F1D0096934FDF4443379A43ED9 /* Release */,
+				97B95B4E24445B766E86C01840D3F61F /* Debug */,
+				7B0C33944C53D0F711A8BC6374A41D1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

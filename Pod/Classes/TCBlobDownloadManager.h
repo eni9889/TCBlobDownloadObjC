@@ -86,4 +86,10 @@ typedef enum {
 -(NSMutableArray *)currentDownloadsFilteredByState:(NSURLSessionTaskState)state;
 
 -(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler;
+
+-(void)cancelDownload:(TCBlobDownload *)download;
+
+-(void)suspendDownload:(TCBlobDownload *)download;
+
+-(void)resumeDownload:(TCBlobDownload *)download;
 @end
