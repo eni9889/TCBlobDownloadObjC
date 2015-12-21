@@ -1,5 +1,7 @@
 # TCBlobDownloadObjC
 
+[![Join the chat at https://gitter.im/eni9889/TCBlobDownloadObjC](https://badges.gitter.im/eni9889/TCBlobDownloadObjC.svg)](https://gitter.im/eni9889/TCBlobDownloadObjC?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![CI Status](http://img.shields.io/travis/UnlimApps Inc/TCBlobDownloadObjC.svg?style=flat)](https://travis-ci.org/UnlimApps Inc/TCBlobDownloadObjC)
 [![Version](https://img.shields.io/cocoapods/v/TCBlobDownloadObjC.svg?style=flat)](http://cocoapods.org/pods/TCBlobDownloadObjC)
 [![License](https://img.shields.io/cocoapods/l/TCBlobDownloadObjC.svg?style=flat)](http://cocoapods.org/pods/TCBlobDownloadObjC)
