@@ -46,6 +46,10 @@
     if (self.state == kDownloadManagerStateForeground) {
         [self.foregroundSession getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
             for (NSURLSessionDownloadTask *downloadTask in downloadTasks) {
+                
+                NSURLSessionTaskState state = downloadTask.state;
+                NSLog(@"%s: NSURLSessionTaskState: %li",__func__, (long)state);
+                
                 TCBlobDownload *download = self.delegate.downloads[@(downloadTask.taskIdentifier)];
                 [downloadTask cancelByProducingResumeData:^(NSData *resumeData) {
                     NSLog(@"%s: %@", __func__, self.delegate.downloads);
@@ -53,7 +57,7 @@
                     NSURLSessionDownloadTask *newDownloadTask = [self.backgroundSession downloadTaskWithResumeData:resumeData];
                     download.downloadTask = newDownloadTask;
                     self.delegate.downloads[@(newDownloadTask.taskIdentifier)] = download;
-                    if (downloadTask.state == NSURLSessionTaskStateRunning) {
+                    if ( state == NSURLSessionTaskStateRunning) {
                         [newDownloadTask resume];
                     }
                 }];
@@ -72,6 +76,10 @@
     if (self.state == kDownloadManagerStateBackground) {
         [self.backgroundSession getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
             for (NSURLSessionDownloadTask *downloadTask in downloadTasks) {
+                
+                NSURLSessionTaskState state = downloadTask.state;
+                NSLog(@"%s: NSURLSessionTaskState: %li",__func__, (long)state);
+                
                 TCBlobDownload *download = self.delegate.downloads[@(downloadTask.taskIdentifier)];
                 [downloadTask cancelByProducingResumeData:^(NSData *resumeData) {
                     NSLog(@"%s: %@", __func__, self.delegate.downloads);
@@ -79,7 +87,7 @@
                     NSURLSessionDownloadTask *newDownloadTask = [self.foregroundSession downloadTaskWithResumeData:resumeData];
                     download.downloadTask = newDownloadTask;
                     self.delegate.downloads[@(newDownloadTask.taskIdentifier)] = download;
-                    if (downloadTask.state == NSURLSessionTaskStateRunning) {
+                    if ( state == NSURLSessionTaskStateRunning) {
                         [newDownloadTask resume];
                     }
                 }];
