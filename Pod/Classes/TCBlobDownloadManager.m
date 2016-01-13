@@ -181,11 +181,15 @@
     NSError *fileError;
     NSURL *resultingURL;
     
-    BOOL result = [[NSFileManager defaultManager] replaceItemAtURL:download.destinationURL withItemAtURL:location backupItemName:nil options:NSFileManagerItemReplacementUsingNewMetadataOnly resultingItemURL:&resultingURL error:&fileError];
-    if (result) {
-        download.resultingURL = resultingURL;
+    if (download && download.destinationURL) {
+        BOOL result = [[NSFileManager defaultManager] replaceItemAtURL:download.destinationURL withItemAtURL:location backupItemName:nil options:NSFileManagerItemReplacementUsingNewMetadataOnly resultingItemURL:&resultingURL error:&fileError];
+        if (result) {
+            download.resultingURL = resultingURL;
+        } else {
+            download.error = fileError;
+        }
     } else {
-        download.error = fileError;
+        download.error = [NSError errorWithDomain:@"UA_DL_NO_DESTINATION_URL" code:0 userInfo:nil];
     }
 }
 
